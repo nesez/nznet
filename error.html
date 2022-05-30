@@ -29,43 +29,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>nesez search</title>
-		
 <script>
-	var type = navigator.appName
-	var lang;
-	if (type=="Netscape")
-	  lang = navigator.language
-	else if (type=="Netscape")
-	  lang = navigator.language
-	else
-	  lang = navigator.userLanguage
-
-	var lang = lang.substr(0,2)
-	
-
-	if (lang == "ko")
-	  window.location.replace('https://nesez.net/ko/blocked')
-	else if (lang == "de")
-	  window.location.replace('https://nesez.net/de/blocked')
-	else if (lang == "it")
-	  window.location.replace('https://nesez.net/it/blocked')
-	else if (lang == "vn")
-	  window.location.replace('https://nesez.net/vn/blocked')
-	else if (lang == "ar")
-	  window.location.replace('https://nesez.net/ar/blocked')
-	else if (lang == "fr")
-	  window.location.replace('https://nesez.net/fr/blocked')
-	else if (lang == "es")
-	  window.location.replace('https://nesez.net/es/blocked')
-	else if (lang == "pt")
-	  window.location.replace('https://nesez.net/pt/blocked')
-	else if (lang == "ru")
-	  window.location.replace('https://nesez.net/ru/blocked')
-	else if (lang == "id")
-	  window.location.replace('https://nesez.net/id/blocked')
-	else
-	  window.location.replace('https://nesez.net/en/blocked')
-	
+    var Original_URL = 'https://nesez.net';
+    var Replace_URL = 'https://nesez.com';
+    var online = document.URL;
+    if(online.match(Original_URL)) document.location.href = online.replace(Original_URL, Replace_URL);
   </script>
 </head>
 <body class="layout-default">
